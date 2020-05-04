@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "gnomon-app",
+    "slug": "gnomon-app",
+    "platforms": [
+      "android",
+      "web"
+    ],
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#efeff0"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
