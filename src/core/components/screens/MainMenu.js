@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text} from 'react-native'
-import { labels } from 'core/styles/mainStyle'
+import { texts } from 'core/styles/mainStyle'
 import IconButton from 'core/components/buttons/IconButton'
 
 class MainMenu extends React.Component {
@@ -12,9 +12,9 @@ class MainMenu extends React.Component {
     render(){
         return (
             <View style={styles.container}>
-                <Text style={labels.section}>Notifications</Text>
+                <Text style={texts.section}>Notifications</Text>
                 <View style={styles.notificationsFakeContainer}></View>
-                <Text style={labels.section}>Navigation</Text>
+                <Text style={texts.section}>Navigation</Text>
                 <View style={styles.navigationContainer}>
                     <IconButton 
                         title="Applications"
