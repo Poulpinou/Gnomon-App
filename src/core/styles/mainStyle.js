@@ -13,14 +13,3 @@ export const labels = StyleSheet.create({
         marginLeft : 20
     }
 })
-
-export const headers = {
-    main: StyleSheet.create({
-        container: {
-            backgroundColor: colors.third
-        },
-        title: {
-            color: colors.textLight
-        }
-    })
-}
