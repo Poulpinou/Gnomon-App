@@ -1,10 +1,9 @@
 import React from 'react';
-import { StyleSheet, View, Text, Button} from 'react-native'
-import { labels } from '../../styles/mainStyle'
-import IconButton from '../buttons/IconButton'
+import { StyleSheet, View, Text} from 'react-native'
+import { labels } from 'core/styles/mainStyle'
+import IconButton from 'core/components/buttons/IconButton'
 
 class MainMenu extends React.Component {
-
     constructor(props){
         super(props);
         this.buttonsIconSize = 50;
@@ -21,6 +20,7 @@ class MainMenu extends React.Component {
                         title="Applications"
                         style={styles.navigationButton} 
                         iconSize={this.buttonsIconSize}
+                        iconName='archive'
                         onPress={() => {console.log("Click")}}
                     />
 
@@ -28,13 +28,15 @@ class MainMenu extends React.Component {
                         title="Agenda"
                         style={styles.navigationButton} 
                         iconSize={this.buttonsIconSize}
-                        onPress={() => {console.log("Click")}}
+                        iconName="event-note"
+                        onPress={() => this.props.navigation.navigate("Agenda")}
                     />
 
                     <IconButton 
                         title="Profil"
                         style={styles.navigationButton} 
                         iconSize={this.buttonsIconSize}
+                        iconName="person"
                         onPress={() => {console.log("Click")}}
                     />
 
@@ -42,6 +44,7 @@ class MainMenu extends React.Component {
                         title="Paramètres"
                         style={styles.navigationButton} 
                         iconSize={this.buttonsIconSize}
+                        iconName="tune"
                         onPress={() => {console.log("Click")}}
                     />
                 </View>

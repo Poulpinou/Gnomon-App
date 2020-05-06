@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Text, Button, TouchableOpacity, Image} from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity, Image} from 'react-native'
+import { Icon } from 'react-native-elements'
 import colors from 'core/styles/colors'
 import PropTypes from 'prop-types';
 
@@ -7,32 +8,37 @@ class IconButton extends React.Component {
 
     constructor(props){
         super(props);
-        this.iconSize = this.props.iconSize | 32
-        this.numberOfLines = this.props.numberOfLines | 1
-        this.iconSource = this.props.iconSource | require('assets/icons/camera_icon.png')
+        this.iconSize = this.props.iconSize || 26
+        this.iconColor = this.props.iconColor || '#999999'
+        this.iconName = this.props.iconName || 'not-interested'
+        this.numberOfLines = this.props.numberOfLines || 1
+        this.content = this.props.children ? this.props.children : this.props.title
     }
 
     render(){
         return (
-            <View style={this.props.style}>
+            <View style={[styles.outer_container, this.props.style]}>
                 <TouchableOpacity
                     onPress={this.props.onPress}
                 >
-                    <View style={styles.container}>
-                        <Image 
+                    <View style={styles.inner_container}>
+                        <Icon 
+                            name={this.iconName}
+                            color={this.iconColor}
+                            size={this.iconSize}
                             style={[
-                                styles.icon, 
-                                {width: this.iconSize, height: this.iconSize},
+                                styles.icon,
                                 this.props.iconStyle
                             ]}
-                            source={this.iconSource}
                         />
-                        <Text 
-                            numberOfLines={this.numberOfLines}
-                            style={[styles.text, this.props.textStyle]}
-                        >
-                            {this.props.children ? this.props.children : this.props.title}
-                        </Text>
+                        {this.content?
+                            <Text 
+                                numberOfLines={this.numberOfLines}
+                                style={[styles.text, this.props.textStyle]}
+                            >
+                                {this.content}
+                            </Text>
+                        :null}
                     </View>
                 </TouchableOpacity>
             </View>
@@ -41,27 +47,29 @@ class IconButton extends React.Component {
 }
 
 IconButton.propTypes = {
+    iconName: PropTypes.string,
     iconSize: PropTypes.number,
+    iconColor: PropTypes.string,
+    iconStyle: PropTypes.object,
     numberOfLines: PropTypes.number,
     textStyle: PropTypes.object,
-    iconStyle: PropTypes.object,
-    onPress: PropTypes.func,
-    iconSource: PropTypes.object
+    onPress: PropTypes.func
 }
 
 const styles = StyleSheet.create({
-    container:{
+    outer_container:{
         backgroundColor: colors.second,
-        flexDirection: 'row',
         borderRadius: 5
+    },
+    inner_container:{
+        flexDirection: 'row'
     },
     icon:{
         margin: 5
     },
     text:{
         textAlign:'center',
-        textAlignVertical:'center',
-        flex: 1
+        textAlignVertical:'center'
     }
 })
 
