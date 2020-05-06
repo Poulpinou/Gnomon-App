@@ -1,0 +1,104 @@
+{
+    "content": [
+        {
+            "date": "2020-04-23",
+            "events": [
+                {
+                    "createdAt": "2020-04-23T15:26:21Z",
+                    "updatedAt": "2020-04-23T15:26:23Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 4,
+                    "title": "Event bof...",
+                    "description": "Un Event de prévu",
+                    "date": "2020-04-23T15:26:35"
+                },
+                {
+                    "createdAt": "2020-04-23T15:26:21Z",
+                    "updatedAt": "2020-04-23T15:26:23Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 3,
+                    "title": "Event pourri",
+                    "description": "Un Event de prévu",
+                    "date": "2020-04-23T17:26:35"
+                }
+            ]
+        },
+        {
+            "date": "2020-04-25",
+            "events": [
+                {
+                    "createdAt": "2020-04-23T15:26:21Z",
+                    "updatedAt": "2020-04-23T15:26:23Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 2,
+                    "title": "Super Event",
+                    "description": "Un Event de prévu avec une description bien longue histoire de voir si tout va péter ou si ça va s'adapter comme il faut! Je me fais chier hein? Ouais j'avoue... Mais bon c'est pour le bien de l'appli parce qu'il faut évidemment tenir compte de ce genre de cas!",
+                    "date": "2020-04-25T15:26:35"
+                }
+            ]
+        },
+        {
+            "date": "2020-04-30",
+            "events": [
+                {
+                    "createdAt": "2020-04-24T09:26:05Z",
+                    "updatedAt": "2020-04-24T09:26:05Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 19,
+                    "title": "Mon Event qui tue",
+                    "description": "Une bonne soirée avec ta mère",
+                    "date": "2020-04-30T20:00:00"
+                },
+                {
+                    "createdAt": "2020-04-24T07:27:53Z",
+                    "updatedAt": "2020-04-24T07:27:53Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 18,
+                    "title": "Mon Event qui pue",
+                    "description": "Une excellente soirée avec ta mère",
+                    "date": "2020-04-30T20:00:00"
+                },
+                {
+                    "createdAt": "2020-04-24T07:27:13Z",
+                    "updatedAt": "2020-04-24T10:49:03Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 17,
+                    "title": "Mon Event qui sue",
+                    "description": "Une chaude soirée avec ta mère",
+                    "date": "2020-04-30T20:00:00"
+                },
+                {
+                    "createdAt": "2020-04-24T07:18:49Z",
+                    "updatedAt": "2020-04-24T07:18:49Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 15,
+                    "title": "Mon Event dans la rue",
+                    "description": "Une vraie soirée avec ta mère",
+                    "date": "2020-04-30T20:00:00"
+                },
+                {
+                    "createdAt": "2020-04-24T06:41:21Z",
+                    "updatedAt": "2020-04-24T09:37:12Z",
+                    "createdBy": 3,
+                    "updatedBy": 3,
+                    "id": 6,
+                    "title": "Mon Event modifié",
+                    "description": "Une très bonne soirée avec ta mère",
+                    "date": "2020-04-30T22:00:00"
+                }
+            ]
+        }
+    ],
+    "page": 0,
+    "size": 30,
+    "totalElements": 8,
+    "totalPages": 1,
+    "last": true
+}

@@ -6,6 +6,7 @@ import Agenda from 'agenda/components/screens/Agenda'
 import AgendaMenu from 'agenda/components/screens/AgendaMenu'
 import { mainHeaderOptions } from 'core/components/headers/mainHeader';
 import IconButton from 'core/components/buttons/IconButton'
+import colors from 'core/styles/colors';
 
 const AgendaStack = createStackNavigator();
 function AgendaStackScreen(){
@@ -18,9 +19,10 @@ function AgendaStackScreen(){
                     ...mainHeaderOptions({navigation, route}),
                     headerRight: props => (
                         <IconButton
-                            style={{backgroundColor: 'transparent', color:'white'}}
+                            style={{backgroundColor: 'transparent'}}
                             onPress={() => navigation.navigate("AgendaMenu")}
                             iconName='menu'
+                            iconColor={colors.textLight}
                         />
                     )
                 })}
